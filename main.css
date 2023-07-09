@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #2b60a2;
+}
+.container {
+  background: #f3eef3;
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 800px;
+  height: 1200px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+.header {
+  text-align: center;
+}
+.header h1 {
+  margin-bottom: 20px;
+}
+.header h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header__logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  border: 5px groove #2b60a2;
+}
+.header__logo img {
+  width: 120%;
+  margin: -60px auto;
+  margin-left: -15px;
+}
+.header__main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__main-left {
+  flex: 1;
+  padding: 30px;
+}
+.header__main-left p {
+  line-height: 2;
+}
+.header__main-left ul li {
+  line-height: 2;
+}
+li {
+  display: block;
+}
+.header__footer-logo {
+  display: inline-block;
+}
+h2 {
+  background: #2b60a2;
+  padding: 15px;
+  color: #fff;
+  margin: 30px 0;
+  font-size: 20px;
+  border-radius: 0 50px 50px 0;
+}
+.header__main-right {
+  flex: 1;
+  padding: 30px;
+}
+.header__main-right h3 {
+  margin-bottom: 15px;
+}
+.header__main-right p {
+  line-height: 2.9;
+}
+
+.header__main-block {
+  height: 14px;
+  background: gray;
+  border-radius: 3px;
+}
+.header__main-wrap {
+  text-transform: uppercase;
+  line-height: 2;
+}
+.header_main-ru {
+  margin-top: 15px;
+}
+.header__column {
+  height: 14px;
+  background: #2b60a2;
+  border-radius: 3px;
+  position: relative;
+  animation: testBars 2.5s 1;
+}
+.header__column::before {
+  content: attr(per);
+  background: #2b60a2;
+  color: #f3eef3;
+  border-radius: 10px;
+  position: absolute;
+  padding: 1px 5px;
+  font-size: 16px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.header__column::after {
+  content: "";
+  position: absolute;
+  background: #2b60a2;
+  width: 7px;
+  height: 7px;
+  top: 18px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 10px;
+}
+@keyframes testBars {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+.header__img {
+  margin-top: 220px;
+  margin-left: 220px;
+  width: 160px;
+  height: 160px;
+}
